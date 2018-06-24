@@ -10,7 +10,6 @@ let package = Package(
     targets: [
         .target(name: "App", dependencies: ["Vapor"]),
         .target(name: "Run", dependencies: ["App"]),
-        .target(name: "FloatGame", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])
     ]
 )
