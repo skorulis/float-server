@@ -1,8 +1,1 @@
-{
-    "lore":[
-            {
-            "name":"ether",
-            "body":"Ether is inside some living beings and grows on certain plants. Can be stored in crystals and transfered via something like an ATM machine. Certain religions believe it to be part of the soul and reject the concept of transfers. Regenerates very slowly inside people. On death it has a half life of about 1 hour and leaks back into the atmosphere. Can also find mineral deposits. Used for enchanting and other forms of permenant magic."
-            }
-    ]
-}
+{"lore":[{"name":"ether","body":"Ether is a force that exists to some extent inside all animals and in certain plants. Can be stored in crystals and transfered via something like an ATM machine. Certain religions believe it to be part of the soul and reject the concept of transfers. Regenerates very slowly inside people. On death it has a half life of about 1 hour and leaks back into the atmosphere. Can also find mineral deposits. Used for enchanting and other forms of permenant magic.\n"}]}

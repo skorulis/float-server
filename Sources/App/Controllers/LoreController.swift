@@ -10,13 +10,13 @@ import Vapor
 class LoreController {
 
     private let decoder = JSONDecoder()
-    private let loreMapping:[String:LoreModel]
+    private let encoder = JSONEncoder();
+    private var loreMapping:[String:LoreModel]
     
     init() {
         var loreDict = [String:LoreModel]()
         do {
-            let home = FileManager.default.homeDirectoryForCurrentUser
-            let fileURL = URL(fileURLWithPath: "dev/floats/float-server/Data/lore.json", relativeTo: home)
+            let fileURL = LoreController.dataURL()
             
             let data = try Data(contentsOf: fileURL)
             let loreArray = try decoder.decode(LoreArray.self, from: data)
@@ -28,6 +28,11 @@ class LoreController {
             print("Error: \(error)" )
         }
         loreMapping = loreDict
+    }
+    
+    private class func dataURL() -> URL {
+        let home = FileManager.default.homeDirectoryForCurrentUser
+        return URL(fileURLWithPath: "dev/floats/float-server/Data/lore.json", relativeTo: home)
     }
     
     func index(_ req: Request) throws -> [String:String] {
@@ -45,6 +50,17 @@ class LoreController {
             throw Abort.init(.badRequest)
         }
         return item
+    }
+    
+    func updateLore(_ req: Request) throws -> LoreModel {
+        let x:LoreModel = try req.content.syncDecode(LoreModel.self)
+        loreMapping[x.name] = x;
+        let fileURL = LoreController.dataURL()
+        let array = LoreArray(lore: Array(self.loreMapping.values))
+        let data = try encoder.encode(array)
+        try data.write(to: fileURL)
+        
+        return x;
     }
     
 }

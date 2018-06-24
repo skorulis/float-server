@@ -16,8 +16,9 @@ class HATEOASController {
     func index(_ req: Request) throws -> [String:String] {
         let host = HATEOASController.baseHost(req)
         let loreURL = host + "/lore"
+        let loreItemURL = host + "/lore/{name}";
         
-        return ["lore":loreURL]
+        return ["loreList":loreURL,"loreItem":loreItemURL]
     }
     
     class func loreURL(lore:LoreModel, req:Request) -> String {
