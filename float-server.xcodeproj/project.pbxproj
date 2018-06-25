@@ -21,6 +21,17 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		FA60D6F720E19FDB00BD7797 /* MaxValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6F620E19FDB00BD7797 /* MaxValueField.swift */; };
+		FA60D6FD20E1A59200BD7797 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6F920E1A59100BD7797 /* SkillModel.swift */; };
+		FA60D6FE20E1A59200BD7797 /* SkillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6F920E1A59100BD7797 /* SkillModel.swift */; };
+		FA60D6FF20E1A59200BD7797 /* NonPlayerCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6FA20E1A59100BD7797 /* NonPlayerCharacterModel.swift */; };
+		FA60D70020E1A59200BD7797 /* NonPlayerCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6FA20E1A59100BD7797 /* NonPlayerCharacterModel.swift */; };
+		FA60D70120E1A59200BD7797 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6FB20E1A59100BD7797 /* CharacterModel.swift */; };
+		FA60D70220E1A59200BD7797 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D6FB20E1A59100BD7797 /* CharacterModel.swift */; };
+		FA60D70420E1A5C700BD7797 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D70320E1A5C700BD7797 /* ItemModel.swift */; };
+		FA60D70520E1A5C700BD7797 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D70320E1A5C700BD7797 /* ItemModel.swift */; };
+		FA60D70720E1A5F800BD7797 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D70620E1A5F800BD7797 /* InventoryModel.swift */; };
+		FA60D70820E1A5F800BD7797 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60D70620E1A5F800BD7797 /* InventoryModel.swift */; };
 		FACAB2C120E069F20023CBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2C020E069F20023CBC6 /* AppDelegate.swift */; };
 		FACAB2C320E069F20023CBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2C220E069F20023CBC6 /* ViewController.swift */; };
 		FACAB2C520E069F40023CBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACAB2C420E069F40023CBC6 /* Assets.xcassets */; };
@@ -4016,6 +4027,12 @@
 		"Crypto::Random::Product" /* Random.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Random.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Crypto::libbcrypt::Product" /* libbcrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libbcrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DatabaseKit::DatabaseKit::Product" /* DatabaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DatabaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA60D6F620E19FDB00BD7797 /* MaxValueField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxValueField.swift; sourceTree = "<group>"; };
+		FA60D6F920E1A59100BD7797 /* SkillModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillModel.swift; sourceTree = "<group>"; };
+		FA60D6FA20E1A59100BD7797 /* NonPlayerCharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonPlayerCharacterModel.swift; sourceTree = "<group>"; };
+		FA60D6FB20E1A59100BD7797 /* CharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		FA60D70320E1A5C700BD7797 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		FA60D70620E1A5F800BD7797 /* InventoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
 		FACAB2B620E067550023CBC6 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		FACAB2B820E068690023CBC6 /* LandPlotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandPlotModel.swift; sourceTree = "<group>"; };
 		FACAB2BE20E069F20023CBC6 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5282,6 +5299,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA60D6F820E1A59100BD7797 /* characters */ = {
+			isa = PBXGroup;
+			children = (
+				FA60D6F920E1A59100BD7797 /* SkillModel.swift */,
+				FA60D6FA20E1A59100BD7797 /* NonPlayerCharacterModel.swift */,
+				FA60D6FB20E1A59100BD7797 /* CharacterModel.swift */,
+			);
+			path = characters;
+			sourceTree = "<group>";
+		};
+		FA60D6FC20E1A59200BD7797 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				FA60D70320E1A5C700BD7797 /* ItemModel.swift */,
+				FA60D70620E1A5F800BD7797 /* InventoryModel.swift */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
 		FACAB2BF20E069F20023CBC6 /* Game */ = {
 			isa = PBXGroup;
 			children = (
@@ -5621,9 +5657,12 @@
 		OBJ_21 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA60D6F820E1A59100BD7797 /* characters */,
+				FA60D6FC20E1A59200BD7797 /* items */,
 				OBJ_22 /* LoreModel.swift */,
 				FACAB2B620E067550023CBC6 /* CityModel.swift */,
 				FACAB2B820E068690023CBC6 /* LandPlotModel.swift */,
+				FA60D6F620E19FDB00BD7797 /* MaxValueField.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -6570,7 +6609,7 @@
 			path = ".build/checkouts/core.git-9210800844849382486/Sources/Async";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -6582,7 +6621,6 @@
 				FACAB2BF20E069F20023CBC6 /* Game */,
 				OBJ_655 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_503 /* Core */ = {
@@ -8474,7 +8512,7 @@
 				en,
 				Base,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_655 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -8561,7 +8599,12 @@
 			files = (
 				FACAB2EB20E07E860023CBC6 /* CityGridLayout.swift in Sources */,
 				FACAB2C320E069F20023CBC6 /* ViewController.swift in Sources */,
+				FA60D70820E1A5F800BD7797 /* InventoryModel.swift in Sources */,
+				FA60D70520E1A5C700BD7797 /* ItemModel.swift in Sources */,
+				FA60D70020E1A59200BD7797 /* NonPlayerCharacterModel.swift in Sources */,
 				FACAB2C120E069F20023CBC6 /* AppDelegate.swift in Sources */,
+				FA60D6FE20E1A59200BD7797 /* SkillModel.swift in Sources */,
+				FA60D70220E1A59200BD7797 /* CharacterModel.swift in Sources */,
 				FACAB2E720E07D5E0023CBC6 /* LandPlotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8620,6 +8663,12 @@
 				FACAB2D020E06DAB0023CBC6 /* CityController.swift in Sources */,
 				FACAB2DC20E06E450023CBC6 /* LandPlotModel.swift in Sources */,
 				OBJ_1075 /* LoreModel.swift in Sources */,
+				FA60D70420E1A5C700BD7797 /* ItemModel.swift in Sources */,
+				FA60D70120E1A59200BD7797 /* CharacterModel.swift in Sources */,
+				FA60D6FF20E1A59200BD7797 /* NonPlayerCharacterModel.swift in Sources */,
+				FA60D6FD20E1A59200BD7797 /* SkillModel.swift in Sources */,
+				FA60D6F720E19FDB00BD7797 /* MaxValueField.swift in Sources */,
+				FA60D70720E1A5F800BD7797 /* InventoryModel.swift in Sources */,
 				FACAB2DB20E06E360023CBC6 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

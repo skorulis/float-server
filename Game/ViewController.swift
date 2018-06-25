@@ -45,19 +45,5 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         return landCell
     }
 
-    private func getMapText() -> String {
-        let city = cityController.city
-        var text = ""
-        for y in 0..<city.height {
-            for x in 0..<city.width {
-                let square = city.getPlot(x: x, y: y)
-                text += "#"
-            }
-            text += "\n"
-        }
-        return text
-    }
-    
-
 }
 
