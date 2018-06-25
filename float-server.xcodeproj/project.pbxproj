@@ -21,11 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		FACAB2A620E065A50023CBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2A520E065A50023CBC6 /* AppDelegate.swift */; };
-		FACAB2A820E065A70023CBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACAB2A720E065A70023CBC6 /* Assets.xcassets */; };
-		FACAB2AB20E065A70023CBC6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAB2A920E065A70023CBC6 /* MainMenu.xib */; };
-		FACAB2B120E065E40023CBC6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "float-server::Common::Product" /* Common.framework */; };
-		FACAB2B220E065E40023CBC6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "float-server::Common::Product" /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FACAB2C120E069F20023CBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2C020E069F20023CBC6 /* AppDelegate.swift */; };
+		FACAB2C320E069F20023CBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2C220E069F20023CBC6 /* ViewController.swift */; };
+		FACAB2C520E069F40023CBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACAB2C420E069F40023CBC6 /* Assets.xcassets */; };
+		FACAB2C820E069F40023CBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACAB2C620E069F40023CBC6 /* Main.storyboard */; };
+		FACAB2D020E06DAB0023CBC6 /* CityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2CF20E06DAB0023CBC6 /* CityController.swift */; };
+		FACAB2D620E06DFF0023CBC6 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "float-server::Common::Product" /* Common.framework */; };
+		FACAB2D720E06DFF0023CBC6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "float-server::Common::Product" /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FACAB2DB20E06E360023CBC6 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2B620E067550023CBC6 /* CityModel.swift */; };
+		FACAB2DC20E06E450023CBC6 /* LandPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2B820E068690023CBC6 /* LandPlotModel.swift */; };
 		OBJ_1004 /* c_nio_sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_545 /* c_nio_sha1.c */; };
 		OBJ_1010 /* empty.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_571 /* empty.c */; };
 		OBJ_1016 /* libc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_486 /* libc.swift */; };
@@ -3973,7 +3977,7 @@
 			remoteGlobalIDString = "float-server::AppTests";
 			remoteInfo = AppTests;
 		};
-		FACAB2B320E065E40023CBC6 /* PBXContainerItemProxy */ = {
+		FACAB2D820E06DFF0023CBC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -3983,13 +3987,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FACAB2B520E065E40023CBC6 /* Embed Frameworks */ = {
+		FACAB2DA20E06DFF0023CBC6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FACAB2B220E065E40023CBC6 /* Common.framework in Embed Frameworks */,
+				FACAB2D720E06DFF0023CBC6 /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4009,12 +4013,16 @@
 		"Crypto::Random::Product" /* Random.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Random.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Crypto::libbcrypt::Product" /* libbcrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libbcrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DatabaseKit::DatabaseKit::Product" /* DatabaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DatabaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FACAB2A320E065A50023CBC6 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FACAB2A520E065A50023CBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FACAB2A720E065A70023CBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FACAB2AA20E065A70023CBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FACAB2AC20E065A70023CBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FACAB2AD20E065A70023CBC6 /* Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Game.entitlements; sourceTree = "<group>"; };
+		FACAB2B620E067550023CBC6 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		FACAB2B820E068690023CBC6 /* LandPlotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandPlotModel.swift; sourceTree = "<group>"; };
+		FACAB2BE20E069F20023CBC6 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACAB2C020E069F20023CBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACAB2C220E069F20023CBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FACAB2C420E069F40023CBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACAB2C720E069F40023CBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACAB2C920E069F40023CBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACAB2CA20E069F40023CBC6 /* Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Game.entitlements; sourceTree = "<group>"; };
+		FACAB2CF20E06DAB0023CBC6 /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
 		"HTTP::HTTP::Product" /* HTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Multipart::Multipart::Product" /* Multipart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Multipart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_101 /* KeyedCacheSessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedCacheSessions.swift; sourceTree = "<group>"; };
@@ -4545,11 +4553,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FACAB2A020E065A50023CBC6 /* Frameworks */ = {
+		FACAB2BB20E069F20023CBC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACAB2B120E065E40023CBC6 /* Common.framework in Frameworks */,
+				FACAB2D620E06DFF0023CBC6 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5268,16 +5276,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FACAB2A420E065A50023CBC6 /* Game */ = {
+		FACAB2BF20E069F20023CBC6 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				FACAB2A520E065A50023CBC6 /* AppDelegate.swift */,
-				FACAB2A720E065A70023CBC6 /* Assets.xcassets */,
-				FACAB2A920E065A70023CBC6 /* MainMenu.xib */,
-				FACAB2AC20E065A70023CBC6 /* Info.plist */,
-				FACAB2AD20E065A70023CBC6 /* Game.entitlements */,
+				FACAB2C020E069F20023CBC6 /* AppDelegate.swift */,
+				FACAB2C220E069F20023CBC6 /* ViewController.swift */,
+				FACAB2C420E069F40023CBC6 /* Assets.xcassets */,
+				FACAB2C620E069F40023CBC6 /* Main.storyboard */,
+				FACAB2C920E069F40023CBC6 /* Info.plist */,
+				FACAB2CA20E069F40023CBC6 /* Game.entitlements */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		FACAB2CE20E06DA00023CBC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FACAB2CF20E06DAB0023CBC6 /* CityController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* App */ = {
@@ -5577,6 +5594,7 @@
 		OBJ_20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FACAB2CE20E06DA00023CBC6 /* Controllers */,
 				OBJ_21 /* Models */,
 			);
 			name = Common;
@@ -5587,6 +5605,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_22 /* LoreModel.swift */,
+				FACAB2B620E067550023CBC6 /* CityModel.swift */,
+				FACAB2B820E068690023CBC6 /* LandPlotModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -6542,7 +6562,7 @@
 				OBJ_26 /* Public */,
 				OBJ_27 /* Data */,
 				OBJ_28 /* Dependencies */,
-				FACAB2A420E065A50023CBC6 /* Game */,
+				FACAB2BF20E069F20023CBC6 /* Game */,
 				OBJ_655 /* Products */,
 			);
 			name = "";
@@ -7003,7 +7023,7 @@
 				"Core::Bits::Product" /* Bits.framework */,
 				"Vapor::Vapor::Product" /* Vapor.framework */,
 				"swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */,
-				FACAB2A320E065A50023CBC6 /* Game.app */,
+				FACAB2BE20E069F20023CBC6 /* Game.app */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -7452,23 +7472,23 @@
 			productName = DatabaseKitPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		FACAB2A220E065A50023CBC6 /* Game */ = {
+		FACAB2BD20E069F20023CBC6 /* Game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FACAB2AE20E065A70023CBC6 /* Build configuration list for PBXNativeTarget "Game" */;
+			buildConfigurationList = FACAB2CB20E069F40023CBC6 /* Build configuration list for PBXNativeTarget "Game" */;
 			buildPhases = (
-				FACAB29F20E065A50023CBC6 /* Sources */,
-				FACAB2A020E065A50023CBC6 /* Frameworks */,
-				FACAB2A120E065A50023CBC6 /* Resources */,
-				FACAB2B520E065E40023CBC6 /* Embed Frameworks */,
+				FACAB2BA20E069F20023CBC6 /* Sources */,
+				FACAB2BB20E069F20023CBC6 /* Frameworks */,
+				FACAB2BC20E069F20023CBC6 /* Resources */,
+				FACAB2DA20E06DFF0023CBC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FACAB2B420E065E40023CBC6 /* PBXTargetDependency */,
+				FACAB2D920E06DFF0023CBC6 /* PBXTargetDependency */,
 			);
 			name = Game;
 			productName = Game;
-			productReference = FACAB2A320E065A50023CBC6 /* Game.app */;
+			productReference = FACAB2BE20E069F20023CBC6 /* Game.app */;
 			productType = "com.apple.product-type.application";
 		};
 		"HTTP::HTTP" /* HTTP */ = {
@@ -8416,7 +8436,10 @@
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 9999;
 				TargetAttributes = {
-					FACAB2A220E065A50023CBC6 = {
+					"Console::Command" = {
+						DevelopmentTeam = X4S6MUZL2D;
+					};
+					FACAB2BD20E069F20023CBC6 = {
 						CreatedOnToolsVersion = 9.4;
 						DevelopmentTeam = X4S6MUZL2D;
 						ProvisioningStyle = Automatic;
@@ -8496,29 +8519,30 @@
 				"Crypto::libbcrypt" /* libbcrypt */,
 				"swift-nio-ssl::SwiftPMPackageDescription" /* swift-nio-sslPackageDescription */,
 				"swift-nio::SwiftPMPackageDescription" /* swift-nioPackageDescription */,
-				FACAB2A220E065A50023CBC6 /* Game */,
+				FACAB2BD20E069F20023CBC6 /* Game */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FACAB2A120E065A50023CBC6 /* Resources */ = {
+		FACAB2BC20E069F20023CBC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACAB2A820E065A70023CBC6 /* Assets.xcassets in Resources */,
-				FACAB2AB20E065A70023CBC6 /* MainMenu.xib in Resources */,
+				FACAB2C520E069F40023CBC6 /* Assets.xcassets in Resources */,
+				FACAB2C820E069F40023CBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FACAB29F20E065A50023CBC6 /* Sources */ = {
+		FACAB2BA20E069F20023CBC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACAB2A620E065A50023CBC6 /* AppDelegate.swift in Sources */,
+				FACAB2C320E069F20023CBC6 /* ViewController.swift in Sources */,
+				FACAB2C120E069F20023CBC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8573,7 +8597,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				FACAB2D020E06DAB0023CBC6 /* CityController.swift in Sources */,
+				FACAB2DC20E06E450023CBC6 /* LandPlotModel.swift in Sources */,
 				OBJ_1075 /* LoreModel.swift in Sources */,
+				FACAB2DB20E06E360023CBC6 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9398,10 +9425,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FACAB2B420E065E40023CBC6 /* PBXTargetDependency */ = {
+		FACAB2D920E06DFF0023CBC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "float-server::Common" /* Common */;
-			targetProxy = FACAB2B320E065E40023CBC6 /* PBXContainerItemProxy */;
+			targetProxy = FACAB2D820E06DFF0023CBC6 /* PBXContainerItemProxy */;
 		};
 		OBJ_1055 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -11571,18 +11598,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FACAB2A920E065A70023CBC6 /* MainMenu.xib */ = {
+		FACAB2C620E069F40023CBC6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FACAB2AA20E065A70023CBC6 /* Base */,
+				FACAB2C720E069F40023CBC6 /* Base */,
 			);
-			name = MainMenu.xib;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FACAB2AF20E065A70023CBC6 /* Debug */ = {
+		FACAB2CC20E069F40023CBC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -11646,7 +11673,7 @@
 			};
 			name = Debug;
 		};
-		FACAB2B020E065A70023CBC6 /* Release */ = {
+		FACAB2CD20E069F40023CBC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -11874,6 +11901,8 @@
 		OBJ_1019 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = X4S6MUZL2D;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11911,6 +11940,8 @@
 		OBJ_1020 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = X4S6MUZL2D;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15034,11 +15065,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FACAB2AE20E065A70023CBC6 /* Build configuration list for PBXNativeTarget "Game" */ = {
+		FACAB2CB20E069F40023CBC6 /* Build configuration list for PBXNativeTarget "Game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FACAB2AF20E065A70023CBC6 /* Debug */,
-				FACAB2B020E065A70023CBC6 /* Release */,
+				FACAB2CC20E069F40023CBC6 /* Debug */,
+				FACAB2CD20E069F40023CBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
