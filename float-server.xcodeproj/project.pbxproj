@@ -30,6 +30,8 @@
 		FACAB2D720E06DFF0023CBC6 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "float-server::Common::Product" /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FACAB2DB20E06E360023CBC6 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2B620E067550023CBC6 /* CityModel.swift */; };
 		FACAB2DC20E06E450023CBC6 /* LandPlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2B820E068690023CBC6 /* LandPlotModel.swift */; };
+		FACAB2E320E07B160023CBC6 /* LandPlotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAB2E120E07B160023CBC6 /* LandPlotCell.swift */; };
+		FACAB2E420E07B160023CBC6 /* LandPlotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAB2E220E07B160023CBC6 /* LandPlotCell.xib */; };
 		OBJ_1004 /* c_nio_sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_545 /* c_nio_sha1.c */; };
 		OBJ_1010 /* empty.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_571 /* empty.c */; };
 		OBJ_1016 /* libc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_486 /* libc.swift */; };
@@ -4023,6 +4025,8 @@
 		FACAB2C920E069F40023CBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACAB2CA20E069F40023CBC6 /* Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Game.entitlements; sourceTree = "<group>"; };
 		FACAB2CF20E06DAB0023CBC6 /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
+		FACAB2E120E07B160023CBC6 /* LandPlotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandPlotCell.swift; sourceTree = "<group>"; };
+		FACAB2E220E07B160023CBC6 /* LandPlotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandPlotCell.xib; sourceTree = "<group>"; };
 		"HTTP::HTTP::Product" /* HTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Multipart::Multipart::Product" /* Multipart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Multipart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_101 /* KeyedCacheSessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedCacheSessions.swift; sourceTree = "<group>"; };
@@ -5285,6 +5289,8 @@
 				FACAB2C620E069F40023CBC6 /* Main.storyboard */,
 				FACAB2C920E069F40023CBC6 /* Info.plist */,
 				FACAB2CA20E069F40023CBC6 /* Game.entitlements */,
+				FACAB2E120E07B160023CBC6 /* LandPlotCell.swift */,
+				FACAB2E220E07B160023CBC6 /* LandPlotCell.xib */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -8529,6 +8535,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACAB2E420E07B160023CBC6 /* LandPlotCell.xib in Resources */,
 				FACAB2C520E069F40023CBC6 /* Assets.xcassets in Resources */,
 				FACAB2C820E069F40023CBC6 /* Main.storyboard in Resources */,
 			);
@@ -8543,6 +8550,7 @@
 			files = (
 				FACAB2C320E069F20023CBC6 /* ViewController.swift in Sources */,
 				FACAB2C120E069F20023CBC6 /* AppDelegate.swift in Sources */,
+				FACAB2E320E07B160023CBC6 /* LandPlotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
