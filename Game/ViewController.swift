@@ -20,15 +20,9 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         super.viewDidLoad()
         self.cityController = CityController()
 
-        let flowLayout = NSCollectionViewFlowLayout()
-        flowLayout.itemSize = NSSize(width: 160.0, height: 140.0)
-        flowLayout.sectionInset = NSEdgeInsets(top: 10.0, left: 20.0, bottom: 10.0, right: 20.0)
-        flowLayout.minimumInteritemSpacing = 20.0
-        flowLayout.minimumLineSpacing = 20.0
-        collectionView.collectionViewLayout = flowLayout
-        // 2
+        let layout = CityGridLayout()
+        collectionView.collectionViewLayout = layout
         view.wantsLayer = true
-        // 3
         collectionView.layer?.backgroundColor = NSColor.black.cgColor
         
         self.collectionView.register(LandPlotCell.self, forItemWithIdentifier: cellIdentifier)
